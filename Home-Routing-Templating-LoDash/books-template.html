@@ -1,0 +1,37 @@
+<style>
+	thead#prob4 {
+		background:darkgreen;
+	}
+	thead#prob4>tr>td {
+		color:white;
+	}
+	table {
+		border-collapse: collapse; 
+	}
+	table, thead, td {
+		border : 1px solid black;
+	}
+	td {
+		padding: 5px
+	}
+</style>
+<table>
+	<thead id="prob4">
+		<tr>
+			<td>book</td>
+			<td>author</td>
+			<td>price</td>
+			<td>language</td>
+		</tr>
+	</thead>
+	{{#data}}
+	<tbody>
+		<tr>
+			<td>{{book}}</td>
+			<td>{{author}}</td>
+			<td>{{price}}</td>
+			<td>{{language}}</td>
+		</tr>
+	</tbody>
+	{{/data}}
+</table>

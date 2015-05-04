@@ -1,0 +1,28 @@
+<style>
+	thead {
+		background:lightgreen;
+	}
+	table {
+		border-collapse: collapse; 
+	}
+	table, thead, td {
+		border : 1px solid black;
+	}
+	td {
+		padding: 5px
+	}
+</style>
+<table>
+	<thead>
+		<td>name</td>
+		<td>job title</td>
+		<td>website</td>
+	</thead>
+	{{#data}}
+	<tr>
+		<td>{{name}}</td>
+		<td>{{job}}</td>
+		<td>{{website}}</td>
+	</tr>
+	{{/data}}
+</table>

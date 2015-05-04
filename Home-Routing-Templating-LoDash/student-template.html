@@ -1,0 +1,30 @@
+<style>
+	thead#prob3 {
+		background:purple;
+	}
+	thead#prob3>td {
+		color:white;
+	}
+</style>
+<table>
+	<thead id="prob3">
+		<tr>
+			<td>Gender</td>
+			<td>First Name</td>
+			<td>Last Name</td>
+			<td>Age</td>
+			<td>Country</td>
+		</tr>
+	</thead>
+	{{#data}}
+	<tbody>
+		<tr>
+			<td>{{gender}}</td>
+			<td>{{firstName}}</td>
+			<td>{{lastName}}</td>
+			<td>{{age}}</td>
+			<td>{{country}}</td>
+		</tr>
+	</tbody>
+	{{/data}}
+</table>
